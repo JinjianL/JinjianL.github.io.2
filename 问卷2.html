@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>随机问卷链接</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  .button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+  <h1>点击按钮获取随机问卷链接</h1>
+  <button class="button" onclick="redirectToRandomSurvey()">获取问卷链接</button>
+  
+  <script>
+    function redirectToRandomSurvey() {
+      // 问卷链接数组
+      var surveyLinks = [
+        "https://www.wjx.cn/vm/mBT2oMN.aspx#",
+        "https://www.wjx.cn/vm/QImHuFI.aspx#",
+        "https://www.wjx.cn/vm/YjAFj3O.aspx#",
+        "https://www.wjx.cn/vm/exmFcE1.aspx#",
+        "https://www.wjx.cn/vm/tAGF8rW.aspx#",
+        "https://www.wjx.cn/vm/YtOAbQH.aspx#",
+        "https://www.wjx.cn/vm/YJOAbnX.aspx#",
+        "https://www.wjx.cn/vm/mq2nKRT.aspx#"
+      ];
+
+      // 随机选择一个问卷链接
+      var randomIndex = Math.floor(Math.random() * surveyLinks.length);
+      var randomSurveyLink = surveyLinks[randomIndex];
+
+      // 跳转到随机问卷链接
+      window.location.href = randomSurveyLink;
+    }
+  </script>
+</body>
+</html>
